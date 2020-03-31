@@ -62,18 +62,20 @@ class Deteksi extends CI_Controller
                     $result = '3';
                 }
             } elseif ($soal11 == '1' && $soal12 == '0' && $soal13 == '0') {
-                if ($soal23 == '1' || $soal24 == '1' || $soal25 == '1' || $soal26 == '1') {
-                    $result = '1';
-                } elseif ($soal21 == '1') {
+                if ($soal21 == '1' || $soal23 == '1' || $soal24 == '1' || $soal25 == '1' || $soal26 == '1') {
                     $result = '2';
                 } else {
                     $result = '3';
                 }
             } elseif ($soal11 == '0' && $soal12 == '1' && $soal13 == '0') {
-                if ($soal23 == '1' || $soal24 == '1' || $soal25 == '1' || $soal26 == '1') {
-                    $result = '1';
-                } elseif ($soal21 == '1') {
+                if ($soal21 == '1' || $soal23 == '1' || $soal24 == '1' || $soal25 == '1' || $soal26 == '1') {
                     $result = '2';
+                } else {
+                    $result = '3';
+                }
+            } elseif ($soal11 == '0' && $soal12 == '0' && $soal13 == '1') {
+                if ($soal21 == '1' || $soal23 == '1' || $soal24 == '1' || $soal25 == '1' || $soal26 == '1') {
+                    $result = '1';
                 } else {
                     $result = '3';
                 }
